@@ -1,0 +1,29 @@
+html{
+  font-size: 18px;
+}
+
+body{
+  font-family: helvetica;
+  margin: 0;
+  line-height: 1.4rem;
+}
+
+.Container{
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.mainbanner{
+  background-image: url("../images/glasses-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 30rem;
+}
+
+.whitebox{
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: white;
+
+}
