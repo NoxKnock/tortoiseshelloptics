@@ -8,22 +8,59 @@ body{
   line-height: 1.4rem;
 }
 
-.Container{
-  max-width: 960px;
-  margin: 0 auto;
-}
-
-.mainbanner{
+header{
   background-image: url("../images/glasses-bg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 30rem;
+  padding-top: 1rem; /*in order to push down the nav menu I use this padding which moves it down with 1 rem*/
 }
 
-.whitebox{
-  display: flex;
-  flex-direction: row-reverse;
-  background-color: white;
+.Container{
+  max-width: 960px;
+  margin: 0 auto;
+}
 
+nav{ /*this makes the menu have logo on one side of the container and the list on the other side of the container (nav bar)*/
+  display: flex;
+  align-items: center; /*items are centered*/
+  justify-content: space-between; /*but are also separated between the divs in order to have menu on the right side and logo on the left*/
+  background-color: cadetblue;
+}
+
+.CompanyLogo{ /* In order to have the logo and its logotext centered I simpyl use align items*/
+  display: flex;
+  align-items: center;
+}
+
+.logo img{
+ height: 1.5rem;
+ padding-left: 2rem;
+ padding-right: 1rem;
+}
+
+.title{
+  font-size: 1rem;
+  font-family: Helvetica;
+}
+
+ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 1rem 2rem;
+}
+
+.rightwhite{ /*In order to have the whitebox on the right side of the page I use flex end within a flex container.*/
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 10rem;
+  margin-right: -2rem; /*this bring the box slightly outside its parent*/
+}
+
+.whitebox{ /*the inline-block element make the div adjust after its contents size*/
+  display: inline-block;
+  background-color: white;
+  padding: 1.5rem 5rem;
+  line-height: 1.2;
 }
