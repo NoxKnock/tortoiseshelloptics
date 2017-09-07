@@ -27,6 +27,7 @@ nav{ /*this makes the menu have logo on one side of the container and the list o
   align-items: center; /*items are centered*/
   justify-content: space-between; /*but are also separated between the divs in order to have menu on the right side and logo on the left*/
   background-color: cadetblue;
+  color: white;
 }
 
 .CompanyLogo{ /* In order to have the logo and its logotext centered I simpyl use align items*/
@@ -34,7 +35,7 @@ nav{ /*this makes the menu have logo on one side of the container and the list o
   align-items: center;
 }
 
-.logo img{
+.CompanyLogo img{
  height: 1.5rem;
  padding-left: 2rem;
  padding-right: 1rem;
@@ -48,7 +49,8 @@ nav{ /*this makes the menu have logo on one side of the container and the list o
 ul li{
   list-style: none;
   display: inline-block;
-  padding: 1rem 2rem;
+  padding: 0 2rem;
+
 }
 
 .rightwhite{ /*In order to have the whitebox on the right side of the page I use flex end within a flex container.*/
@@ -63,4 +65,41 @@ ul li{
   background-color: white;
   padding: 1.5rem 5rem;
   line-height: 1.2;
+}
+
+.Mainlogo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo{
+  /* in order to structure and have the three divs alignd in a good looking way we use the below properties*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 8rem;
+  width: 5rem;
+  text-align: center;
+  padding: 3rem; /*when you use padding, don't forget the math.. between two items you have 6 padding here, 3rem on each side.*/
+}
+
+#paper img{
+  width: 3.5rem;
+}
+
+#ruler img{
+  width: 5rem;
+}
+
+#truck img{
+  width: 5rem;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
